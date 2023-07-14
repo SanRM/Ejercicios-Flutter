@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:ch7_animations/widgets/animated_contained.dart';
 import 'package:ch7_animations/widgets/animated_cross_fade.dart';
+import 'package:ch7_animations/widgets/animated_opacity.dart';
 
 class Home extends StatefulWidget {
   const Home({super.key});
@@ -29,6 +30,9 @@ class _HomeState extends State<Home> {
                 AnimationContainerWidget(),
                 Divider(),
                 AnimatedCrossFadeWidget(),
+                Divider(),
+                AnimatedOpacityWidget(),
+                Divider(),
               ],
             ),
           ),

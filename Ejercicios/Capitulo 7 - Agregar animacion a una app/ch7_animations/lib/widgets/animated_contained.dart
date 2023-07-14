@@ -40,28 +40,32 @@ class _AnimationContainerWidgetState extends State<AnimationContainerWidget> {
 
   @override
   Widget build(BuildContext context) {
-    return AnimatedContainer(
-        duration: const Duration(milliseconds: 200),
-        curve: Curves.decelerate,
-        color: _incrementar == true
-            ? Color.fromARGB(255, 82, 252, 172)
-            : const Color.fromARGB(255, 255, 181, 227),
-        height: _height,
-        width: _width,
-        child: TextButton(
-            style: const ButtonStyle(
-              overlayColor: MaterialStatePropertyAll(Colors.transparent),
+    return ClipRRect(
+      borderRadius: BorderRadius.circular(10),
+      child: AnimatedContainer(
+          duration: const Duration(milliseconds: 200),
+          curve: Curves.decelerate,
+          color: _incrementar == true
+              ? Color.fromARGB(255, 82, 252, 172)
+              : const Color.fromARGB(255, 255, 181, 227),
+          height: _height,
+          width: _width,
+            child: InkWell(
+              onTap: _increaseWidth,
+              child: Container(
+                  padding: EdgeInsets.all(15),
+                  alignment: Alignment.center,
+                  child: Text(
+                    '$estado',
+                    style: TextStyle(
+                      color: _incrementar == true
+                          ? Color.fromARGB(255, 7, 141, 74)
+                          : Color.fromARGB(255, 172, 5, 102)
+                    ),
+                    textAlign: TextAlign.center,
+                  )),
             ),
-            onPressed: _increaseWidth,
-            child: Text(
-              '$estado',
-              style: TextStyle(
-                color: _incrementar == true
-                    ? Color.fromARGB(255, 7, 141, 74)
-                    : Color.fromARGB(255, 172, 5, 102),
-                fontSize: 15,
-              ),
-              textAlign: TextAlign.center,
-            )));
+          )
+        );
   }
 }
