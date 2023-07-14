@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:ch7_animations/widgets/animated_contained.dart';
+import 'package:ch7_animations/widgets/animated_cross_fade.dart';
 
 class Home extends StatefulWidget {
   const Home({super.key});
@@ -13,18 +14,24 @@ class _HomeState extends State<Home> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text("Animated container app"),
-        backgroundColor: Color.fromARGB(255, 33, 189, 189),
+        title: const Text("Animated container app"),
+        backgroundColor: const Color.fromARGB(255, 33, 189, 189),
         centerTitle: true,
       ),
-      body: SafeArea(
-        child: Column(
-          children: [
-            Padding(
-              padding: const EdgeInsets.all(35.0),
-              child: Center(child: AnimationContainerWidget()),
+      body: const SafeArea(
+        child: Padding(
+          padding: EdgeInsets.all(35.0),
+          child: Align(
+            alignment: Alignment.topCenter,
+            child: Column(
+              crossAxisAlignment: CrossAxisAlignment.center,
+              children: [
+                AnimationContainerWidget(),
+                Divider(),
+                AnimatedCrossFadeWidget(),
+              ],
             ),
-          ],
+          ),
         ),
       ),
     );
