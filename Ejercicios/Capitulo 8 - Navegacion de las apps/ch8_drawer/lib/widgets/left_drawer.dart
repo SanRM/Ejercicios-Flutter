@@ -23,6 +23,10 @@ class LeftDrawerWidget extends StatelessWidget {
               Icon(
                 Icons.bookmark_border,
                 color: Colors.white,
+              ),
+              Icon(
+                Icons.star_border_purple500_outlined,
+                color: Colors.white,
               )
             ],
             decoration: BoxDecoration(
