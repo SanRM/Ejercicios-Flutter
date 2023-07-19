@@ -7,9 +7,9 @@ class Reminders extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('Bithday'),
+        title: const Text('Bithday'),
       ),
-      body: Center(
+      body: const Center(
         child: Icon(
           Icons.access_alarm,
           color: Color.fromARGB(255, 255, 123, 162),

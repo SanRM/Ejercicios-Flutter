@@ -10,7 +10,7 @@ class LeftDrawerWidget extends StatelessWidget {
       width: 325,
       child: ListView(
         padding: EdgeInsets.zero,
-        children: [
+        children: const [
           UserAccountsDrawerHeader(
             currentAccountPicture: Icon(
               Icons.face,
@@ -35,7 +35,7 @@ class LeftDrawerWidget extends StatelessWidget {
                   fit: BoxFit.cover),
             ),
           ),
-          const MenuListTileWidget()
+          MenuListTileWidget()
         ],
       ),
     );

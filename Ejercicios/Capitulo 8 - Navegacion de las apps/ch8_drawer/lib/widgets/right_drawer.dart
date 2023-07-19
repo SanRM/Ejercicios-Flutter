@@ -9,16 +9,16 @@ class RightDraweWidget extends StatelessWidget {
     return Drawer(
       child: ListView(
         padding: EdgeInsets.zero,
-        children: [
+        children: const[
           DrawerHeader(
             padding: EdgeInsets.zero,
+            decoration: BoxDecoration(
+              color: Colors.cyan
+            ),
             child: Icon(
               Icons.face,
               size: 128,
               color: Colors.white54,
-            ),
-            decoration: BoxDecoration(
-              color: Colors.cyan
             ),
           ),
           MenuListTileWidget()

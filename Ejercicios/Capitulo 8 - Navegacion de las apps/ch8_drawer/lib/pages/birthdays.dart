@@ -7,14 +7,15 @@ class Birthdays extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('Bithday'),
+        title: const Text('Bithday'),
       ),
-      body: Center(
-          child: Icon(
-        Icons.cake,
-        size: 120,
-        color: Color.fromRGBO(255, 227, 104, 1),
-      )),
+      body: const Center(
+        child: Icon(
+          Icons.cake,
+          size: 120,
+          color: Color.fromRGBO(255, 227, 104, 1),
+        )
+      ),
     );
   }
 }

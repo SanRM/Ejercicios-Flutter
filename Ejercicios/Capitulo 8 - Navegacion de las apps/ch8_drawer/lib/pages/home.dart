@@ -15,11 +15,11 @@ class _HomeState extends State<Home> with SingleTickerProviderStateMixin {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('Home'), // Mostrar el nombre de la página actual en la barra de título
+        title: const Text('Home'), // Mostrar el nombre de la página actual en la barra de título
       ),
       drawer: const LeftDrawerWidget(),
       endDrawer: const RightDraweWidget(),
-      body: SafeArea(
+      body: const SafeArea(
         child: Center(
           child: Icon(
             Icons.home_filled,

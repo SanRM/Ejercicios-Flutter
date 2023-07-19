@@ -7,9 +7,9 @@ class Gratitude extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('Bithday'),
+        title: const Text('Bithday'),
       ),
-      body: Center(
+      body: const Center(
         child: Icon(
           Icons.sentiment_satisfied,
           size: 120,

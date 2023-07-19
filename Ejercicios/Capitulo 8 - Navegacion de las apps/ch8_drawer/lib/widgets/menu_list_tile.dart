@@ -16,8 +16,8 @@ class _MenuListTileWidgetState extends State<MenuListTileWidget> {
     return Column(
       children: [
         ListTile(
-          leading: Icon(Icons.cake),
-          title: Text('Birthdays'),
+          leading: const Icon(Icons.cake),
+          title: const Text('Birthdays'),
           onTap: (){
             Navigator.pop(context);
             Navigator.push(
@@ -29,8 +29,8 @@ class _MenuListTileWidgetState extends State<MenuListTileWidget> {
           },
         ),
         ListTile(
-          leading: Icon(Icons.sentiment_satisfied),
-          title: Text('Gratitude'),
+          leading: const Icon(Icons.sentiment_satisfied),
+          title: const Text('Gratitude'),
           onTap: () {
             Navigator.pop(context);
             Navigator.push(
@@ -42,8 +42,8 @@ class _MenuListTileWidgetState extends State<MenuListTileWidget> {
           },
         ),
         ListTile(
-          leading: Icon(Icons.alarm),
-          title: Text('Reminders'),
+          leading: const Icon(Icons.alarm),
+          title: const Text('Reminders'),
           onTap: () {
             Navigator.pop(context);
             Navigator.push(
@@ -54,10 +54,10 @@ class _MenuListTileWidgetState extends State<MenuListTileWidget> {
             );
           },
         ),
-        Divider(color: Colors.grey,),
+        const Divider(color: Colors.grey,),
         ListTile(
-          leading: Icon(Icons.settings),
-          title: Text('Setting'),
+          leading: const Icon(Icons.settings),
+          title: const Text('Setting'),
           onTap: () {
             Navigator.pop(context);
           },
